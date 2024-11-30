@@ -1,9 +1,9 @@
 import tkinter as tk  # Python built in library Tkinter is used to create the graphical user interface (GUI)
 from tkinter import messagebox  # messagebox is used to show pop-up error messages
 from datetime import datetime  # Python built in library datetime is used to handle date and time operations
-import pytz  # external library pytz is used to manage and convert between different time zones
-from geopy.geocoders import Nominatim  # external library geopy's where Nominatim is used to convert place names to coordinates
-from timezonefinder import TimezoneFinder  # external library timezonefinder is used to find the timezone based on coordinates
+import pytz  # external pyhton library pytz is used to manage and convert between different time zones
+from geopy.geocoders import Nominatim  # external python library geopy's where Nominatim is used to convert place names to coordinates
+from timezonefinder import TimezoneFinder  # external python library timezonefinder is used to find the timezone based on coordinates
 
 def get_time_and_day(event=None):  # Function to get the time and day for a place. event=None allows keyboard binding.
     place = entry_place.get().strip()  # Getting the place name from the user input, Method .get() is used on entry_place (a Tkinter Entry object) to retrieve the user's input
@@ -18,7 +18,7 @@ def get_time_and_day(event=None):  # Function to get the time and day for a plac
         timezone_finder = TimezoneFinder()  # timezone_finder class helps find the timezone from coordinates
 
         # Getting the location (latitude, longitude) based on place name to the location object
-        location = geolocator.geocode(place)
+        location = geolocator.geocode(place)  #converting place name into cordinates
         
         if location is None:  # If no location is found
             messagebox.showerror("Error", "Could not find the place. Please check the name.")
