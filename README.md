@@ -2,11 +2,14 @@
 # PythonDayTimeProject
 An executable batch file Python program which shows the day and time of the searched place.
 
+# Instruction on how to run the program:
+Double-click "DayTime.bat" to run the program, ensuring the correct path to the Python program file.
+
 The repository has two files:
 1. "DayTime.bat": The main executable batch file, which will run the "DayTimePython.pyw" Python code file.
 2. "DayTimePython.pyw": The file that contains the Python code for the program.
 
-## DayTime.bat Breakdown:
+# DayTime.bat Breakdown:
 
 This script is a Windows batch file that automates the process of running a Python script.  
 What each line does:
